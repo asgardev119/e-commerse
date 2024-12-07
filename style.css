@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Paytone+One&family=Playpen+Sans:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+.root {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: black; */
+  background: #ada996;
+  background: -webkit-linear-gradient(
+    to right,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
+  );
+  background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+}
+header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  background: #ada996;
+  z-index: 2;
+}
+
+.cart {
+  background-color: transparent;
+  font-size: 19px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+.cart:hover {
+  background-color: gray;
+}
+
+.logo {
+  height: auto;
+  width: 100px;
+  margin-left: 40px;
+}
+
+header img {
+  width: 100%;
+  height: 30px;
+}
+
+.rigthEle {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.rigthEle ul {
+  width: 100%;
+  color: #000;
+  list-style: none;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-around;
+}
+
+.rigthEle ul a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Paytone One", sans-serif;
+  font-family: "Playpen Sans", cursive;
+}
+.sub {
+  position: absolute;
+  height: auto;
+  width: 100px;
+  background-color: rgb(72, 70, 70);
+  display: none;
+  height: auto;
+}
+
+.sub ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.sub ul li {
+  margin-top: 10px;
+  border-bottom: 2px solid black;
+}
+.rigthEle ul li:hover i {
+  rotate: 180deg;
+  transition: all 0.5s ease-in;
+}
+.rigthEle ul li:hover .sub {
+  height: auto;
+  display: block;
+}
+
+.sub ul li a:hover {
+  color: #fff;
+}
+
+/* ---------Drawer Section------- */
+
+.Drawer {
+  /* position: absolute; */
+  height: 300px;
+  width: 100%;
+  background: #ada996;
+  background: -webkit-linear-gradient(
+    to right,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
+  );
+  background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+
+  margin-top: 60px;
+  /* z-index: -1; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Drawer h2 {
+  font-size: 40px;
+  text-shadow: 2px 2px 20px #fff;
+}
+
+.Drawer p {
+  color: #000;
+  text-shadow: 2px 2px 20px #fff;
+}
+
+.Drawer img {
+  height: 250px;
+  width: 300px;
+  padding: 10px;
+}
+
+.Drawer h2 a {
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 35px;
+  background-color: #000;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.Drawer h2 a:hover {
+  background-color: #fff;
+  color: #000;
+  transition: all 0.5s ease-in-out;
+}
+
+/* <!-- latest Product------- --> */
+
+.latest-productc:hover ~ header {
+  background: #000;
+}
+a.active {
+  color: blue;
+}
+
+.latest-productc {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #dbdbdb;
+}
+
+.latest-productc h1 {
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  width: 200px;
+  border-bottom: 5px solid;
+  color: #0d0d0d;
+  border-color: #fff;
+  font-size: 30px;
+  border-radius: 20px;
+}
+
+.products {
+  margin: auto;
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  padding: 10px 15px;
+  height: auto;
+  width: fit-content;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.card:hover {
+  box-shadow: 2px 2px 40px black;
+  border: 1px solid black;
+}
+
+.card button {
+  padding: 10px 25px;
+  margin-top: 5px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card button:hover {
+  background-color: black;
+  color: white;
+}
+
+.card button:hover {
+  background-color: black;
+  color: white;
+}
+
+.card h2 {
+  color: #ada996;
+  text-align: center;
+}
+.card img {
+  border-radius: 10px;
+  height: 200px;
+  width: 200px;
+  mix-blend-mode: multiply;
+}
+.card p {
+  text-align: center;
+}
+.card p i {
+  color: green;
+}
+
+.drawer2 {
+  margin: auto;
+}
+
+.drawer2 img {
+  width: auto;
+}
+#btn {
+  background-color: black;
+}
+#btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* companies list---- */
+
+.Company {
+  height: 100px;
+  width: 100%;
+  background-color: #dbdbdb;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(96, 128, 0);
+}
+.Company img {
+  height: 60px;
+  width: 120px;
+}
+
+/* feedback------- */
+
+.feed {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background: #ada996; */
+  flex-wrap: wrap;
+}
+.feed h1 {
+  width: 100%;
+  text-align: center;
+  color: rgb(96, 128, 0);
+  text-decoration: underline;
+}
+
+.customer {
+  height: 250px;
+  width: 200px;
+  border-radius: 10px;
+  background: #ada996;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  box-shadow: 2px 2px 30px #fff;
+}
+.customer p {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 40px;
+}
+#rtt {
+  margin-top: 10px;
+  font-size: 12px;
+  color: green;
+}
+
+#rtt i {
+  color: yellow;
+}
+.customer img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-top: -50px;
+}
+/* footer section--------- */
+
+.footer {
+  background: #ada996;
+
+  height: auto;
+  width: 100%;
+}
+
+.footer p {
+  color: black;
+  padding: 10px 20px;
+  font-size: 13px;
+  text-align: center;
+}
